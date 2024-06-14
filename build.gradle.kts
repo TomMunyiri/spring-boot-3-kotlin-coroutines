@@ -26,6 +26,8 @@ dependencies {
 	runtimeOnly("org.postgresql:r2dbc-postgresql")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
+	implementation("dev.miku:r2dbc-mysql:0.8.2.RELEASE")
+	implementation("mysql:mysql-connector-java:8.0.33")
 }
 
 tasks.withType<KotlinCompile> {

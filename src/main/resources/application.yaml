@@ -1,5 +1,11 @@
+#spring:
+#  r2dbc:
+#    url: r2dbc:postgresql://${DB_HOST:localhost}:5432/
+#    username: ${DB_USERNAME:postgres}
+#    password: ${DB_PASSWORD:postgres}
+
 spring:
   r2dbc:
-    url: r2dbc:postgresql://${DB_HOST:localhost}:5432/
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
+    url: r2dbc:mysql://${DB_HOST:localhost}:3306/${DB_NAME:springKotlin}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
